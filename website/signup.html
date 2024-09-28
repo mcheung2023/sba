@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('images/pexels-rovenimages-com-344613-949587.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #6151ad;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            height: 100vh;           
+            margin: 0;
+            opacity: 0;
+            animation: fadeInBackground 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeInBackground {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 30px;
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #326388;
+            border-radius: 5px;
+            background-color: #f7f1f1;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a73e8;
+            color: rgb(51, 157, 123);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0f5bbd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Account</h1>
+        <form id="signupForm" action="login.html">
+            <input type="text" id="name" name="name" placeholder="Full Name" required />
+            <input type="email" id="email" name="email" placeholder="Email Address" required />
+            <input type="tel" id="tel" name="tel" placeholder="Phone Number" required />
+            <select id="refer" name="refer" required>
+                <option value="" disabled selected>How did you hear about us?</option>
+                <option value="facebook">Facebook</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="google">Google</option>
+            </select>
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+                <label><input type="radio" name="contact" value="email" /> Email</label>
+                <label><input type="radio" name="contact" value="phone" /> Phone</label>
+            </fieldset>
+            <label><input type="checkbox" id="terms" name="terms" required /> I agree to the terms and conditions</label>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

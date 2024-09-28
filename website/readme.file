@@ -1,0 +1,52 @@
+Website Technical Specifications:
+
+1. General Overview:
+Frontend: HTML, CSS, and JavaScript
+Fonts: Google Fonts (Merriweather, Roboto)
+Media: Video and images embedded in the dashboard
+2. File Breakdown:
+1. HTML Structure:
+
+Pages:
+dashboard.html: The user's activity dashboard.
+login.html: The login interface.
+signup.html: The sign-up interface for creating a new account​(signup).
+Language: English (lang="en")
+Charset: UTF-8 for universal text compatibility.
+Meta Tag: Viewport is set for responsiveness on mobile devices.
+
+2. CSS Styling:
+Backgrounds:
+All pages (dashboard.html, login.html, and signup.html) feature backgrounds with a fixed image and a linear gradient overlay for visual consistency.
+Animations:
+Fade-in animations are applied to all pages using the @keyframes fadeInBackground rule.
+Fonts:
+Merriweather (used in the dashboard) and Roboto (used on login and sign-up pages), both loaded from Google Fonts.
+
+Layout:
+The login and sign-up pages use centered content via Flexbox, allowing users to interact easily.
+The sign-up page also includes a form with fields for full name, email, phone number, and a dropdown to specify how the user heard about the platform​(signup).
+Clean table layout for user activity in the dashboard with contrasting color schemes.
+Containers:
+Containers in both login and sign-up pages feature transparent backgrounds with rounded corners and shadows for a modern UI look.
+
+3. JavaScript:
+Form Validation:
+Email validation using a regular expression ensures the correct format.
+Phone number validation ensures exactly 10 digits​(script).
+The sign-up page also uses JavaScript to prevent form submission if any input is invalid​(script)​(signup).
+Event Handling:
+JavaScript listens for form submissions on both the login and sign-up pages.
+Form validation messages appear if the form inputs are invalid.
+
+AJAX:
+An asynchronous POST request sends user data to an external server (https://jsonplaceholder.typicode.com/posts) and logs the response​(script).
+
+Website Description:
+This website provides a user-friendly experience, guiding users through the account creation, login, and dashboard functionalities.
+
+The sign-up page allows new users to create an account by providing details such as full name, email, phone number, and how they heard about the service. Users can also select their preferred contact method (email or phone). Upon submission, the form is validated in real-time, ensuring accurate input. Validation errors are highlighted immediately to provide a sign-up process.
+
+Once registered, users are directed to the login page, where they can securely access their account with real-time validation of their credentials.
+
+After logging in, the dashboard presents users with a clean, easy-to-read table showing recent activities, such as login attempts and profile updates. Multimedia elements like videos and images enhance the user experience.

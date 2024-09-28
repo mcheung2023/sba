@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('images/pexels-karolina-grabowska-4465121.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #2f439c;
+            font-family: 'Arial', sans-serif;
+            opacity: 0;
+            animation: fadeInBackground 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeInBackground {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #1a73e8;
+            color: white;
+        }
+        td {
+            background-color: #f0f0f0;
+        }
+        .media {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        video, img {
+            max-width: 48%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Dashboard</h1>
+        <table>
+            <tr>
+                <th>Activity</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Logged In</td>
+                <td>2024-09-24</td>
+                <td>Success</td>
+            </tr>
+            <tr>
+                <td>Updated Profile</td>
+                <td>2024-09-23</td>
+                <td>Success</td>
+            </tr>
+        </table>
+        <div class="media">
+            <video controls>
+                <source src="images/27679362_MotionElements_halloween-3color-alpha_preview.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="images/pexels-karolina-grabowska-5477581.jpg" alt="Welcome">
+        </div>
+    </div>
+</body>
+</html>
