@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weather Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header th:replace="fragments/header :: header"></header>
+<section>
+    <p>Temperature: [[${weather.temperature}]] °C</p>
+    <p>Description: [[${weather.description}]]</p>
+</section>
+</body>
+</html>

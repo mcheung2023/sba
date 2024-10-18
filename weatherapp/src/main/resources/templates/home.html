@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weather - Manfung</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header th:replace="fragments/header :: header"></header>
+<section>
+    <form action="/api/weather" method="get">
+        <label for="city">Enter City:</label>
+        <input type="text" id="city" name="city">
+        <button type="submit">Get Weather</button>
+    </form>
+</section>
+</body>
+</html>
